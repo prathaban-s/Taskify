@@ -1,0 +1,42 @@
+export const chatMessages = [
+    {
+        message: 'Hello, how are you?',
+        name: 'John Doe',
+        time: '12:00',
+        unreadMessagesCount: 1,
+        unreadMessages: true,
+        image: 'https://i.pinimg.com/originals/d0/a2/e2/d0a2e243610bde1be54defdca162e47a.jpg',
+    },
+    {
+        message: 'Hello, how are you?',
+        name: 'John Doe',
+        time: '12:00',
+        unreadMessagesCount: 1,
+        unreadMessages: true,
+        image: 'https://i.pinimg.com/originals/d0/a2/e2/d0a2e243610bde1be54defdca162e47a.jpg',
+    },
+    {
+        message: 'Hello, how are you?',
+        name: 'John Doe',
+        time: '12:00',
+        unreadMessagesCount: 1,
+        unreadMessages: false,
+        image: 'https://i.pinimg.com/originals/d0/a2/e2/d0a2e243610bde1be54defdca162e47a.jpg',
+    },
+    {
+        message: 'Hello, how are you?',
+        name: 'John Doe',
+        time: '12:00',
+        unreadMessagesCount: 1,
+        unreadMessages: false,
+        image: 'https://i.pinimg.com/originals/d0/a2/e2/d0a2e243610bde1be54defdca162e47a.jpg',
+    },
+    {
+        message: 'Hello, how are you?',
+        name: 'John Doe',
+        time: '12:00',
+        unreadMessagesCount: 1,
+        unreadMessages: false,
+        image: 'https://i.pinimg.com/originals/d0/a2/e2/d0a2e243610bde1be54defdca162e47a.jpg',
+    },
+];
