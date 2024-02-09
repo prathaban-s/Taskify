@@ -4,17 +4,43 @@ import { PrimaryButton } from '../../components/ui/Button'
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import UserChatScreen from './UserChatScreen';
 import GroupChatScreen from './GroupChatScreen';
+import { getFocusedRouteNameFromRoute, useNavigation, useNavigationState, useRoute } from '@react-navigation/native';
+import { Colors } from '../../styles/colors';
 
 const Stack = createNativeStackNavigator();
 
+
 const AllChatScreen = () => {
+
+    const navigation: any = useNavigation();
+
+    const router = useRoute();
+
+    const childRoute = getFocusedRouteNameFromRoute(router);
+
+
+    const onClickUserChat = () => {
+        navigation.navigate('UserChat');
+    }
+
+    const onClickGroupChat = () => {
+        navigation.navigate('GroupChat');
+    }
+
     return (
         <View style={styles.container}>
             <View style={styles.buttonContainer} >
-                <PrimaryButton outerContainerStyle={styles.buttonOuterContainer} >
+                <PrimaryButton
+                    outerContainerStyle={styles.buttonOuterContainer}
+                    onPress={onClickUserChat}
+                    innerContainerStyle={childRoute === 'UserChat' ? { backgroundColor: Colors.primary } : { backgroundColor: Colors.secondary }}>
                     <Text>Chats</Text>
                 </PrimaryButton>
-                <PrimaryButton outerContainerStyle={styles.buttonOuterContainer}  >
+                <PrimaryButton
+                    outerContainerStyle={styles.buttonOuterContainer}
+                    onPress={onClickGroupChat}
+                    innerContainerStyle={childRoute === 'GroupChat' ? { backgroundColor: Colors.primary } : { backgroundColor: Colors.secondary }}
+                >
                     <Text>Groups</Text>
                 </PrimaryButton>
             </View>

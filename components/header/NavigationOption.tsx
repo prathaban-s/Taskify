@@ -36,7 +36,7 @@ export const chatScreenHeaderOptions = () => {
 export const addTaskScreenHeaderOptions = () => {
     return {
         headerStyle: { backgroundColor: Colors.background },
-        headerTitle: "Add Task",
+        headerTitle: "Create New Task",
         icon: "add-circle-sharp",
         headerTitleStyle: { color: Colors.white },
     }

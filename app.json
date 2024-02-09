@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "Taskify",
-    "slug": "Taskify",
+    "slug": "taskify",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -15,16 +15,24 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.prathap9943.taskify"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.prathap9943.taskify"
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "1441eb91-8df7-4df6-a865-eea06cba14f4"
+      }
+    },
+    "owner": "prathap9943"
   }
 }

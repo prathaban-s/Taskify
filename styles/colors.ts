@@ -7,4 +7,5 @@ export const Colors = {
     success: '#32CD32',
     background: '#212832',
     tabInactiveColor: '#617D8A',
+    tabBackgroundColor: '#263238'
 };

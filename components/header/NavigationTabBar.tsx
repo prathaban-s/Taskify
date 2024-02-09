@@ -52,7 +52,7 @@ const NavigationTabBar = ({ state, descriptors, navigation }: NavigationTabBarPr
                         style={{ flex: 1 }}
                         key={route.key}
                     >
-                        <View style={styles.container}>
+                        <View style={[styles.container, isFocused ? { backgroundColor: Colors.background } : {}]}>
                             <Ionicons name={options.icon} size={20} color={isFocused ? Colors.primary : Colors.tabInactiveColor} />
                             <Text style={[styles.labelTextStyle, { color: isFocused ? Colors.primary : Colors.tabInactiveColor }]}>
                                 {label}
@@ -74,6 +74,7 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
         paddingVertical: 10,
         gap: 5,
+        backgroundColor: Colors.tabBackgroundColor,
     },
     labelTextStyle: {
         fontSize: 10,
